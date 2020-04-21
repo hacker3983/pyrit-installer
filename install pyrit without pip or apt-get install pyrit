@@ -35,3 +35,40 @@ copy and paste deb http://ftp.debian.org/debian/ stretch main contrib non-free i
 13. python setup.py clean
 14. python setup.py build
 15. sudo python setup.py install
+
+if you don't have pip2 or python2 do this
+cd /etc/apt
+ls
+apt.conf.d   listchanges.conf  sources.list   sources.list.d
+auth.conf.d  preferences.d     sources.list~  trusted.gpg.d
+nano sources.list
+GNU nano 4.9.2                                      sources.list                                                 
+# 
+
+# deb cdrom:[Kali GNU/Linux 2020.1rc4 _Kali-last-snapshot_ - Official amd64 DVD Binary-1 with firmware 20200124-09>
+
+#deb cdrom:[Kali GNU/Linux 2020.1rc4 _Kali-last-snapshot_ - Official amd64 DVD Binary-1 with firmware 20200124-09:>
+ 
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+# deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+ 
+# This system was installed using small removable media
+# (e.g. netinst, live or single CD). The matching "deb cdrom"
+# entries were disabled at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+deb http://ftp.debian.org/debian/ stretch main contrib non-free
+copy and paste deb http://ftp.debian.org/debian/ stretch main contrib non-free in the sources.list file and save it and run the rest of the commands
+1. deb http://ftp.debian.org/debian/ stretch main contrib non-free
+2. sudo apt-get update
+3. sudo apt-get upgrade 
+4. sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev
+5. apt-get install libpcap-dev
+6. apt-get remove --purge pyrit
+7. rm -r /usr/local/lib/python2.7/dist-packages/cpyrit/
+8. sudo apt-get install python-scapy
+9. git clone: git clone https://github.com/JPaulMora/Pyrit.git
+10. cd Pyrit 
+11. python setup.py clean
+12. python setup.py build
+13. sudo python setup.py install
