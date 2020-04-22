@@ -30,7 +30,7 @@ copy and paste deb http://ftp.debian.org/debian/ stretch main contrib non-free i
 8. sudo pip install psycopg2
 9. sudo pip install scapy
 10. sudo apt-get install python-scapy
-11. git clone: git clone https://github.com/JPaulMora/Pyrit.git
+11. git clone https://github.com/JPaulMora/Pyrit.git
 12. cd Pyrit 
 13. python setup.py clean
 14. python setup.py build
@@ -67,7 +67,7 @@ copy and paste deb http://ftp.debian.org/debian/ stretch main contrib non-free i
 6. apt-get remove --purge pyrit
 7. rm -r /usr/local/lib/python2.7/dist-packages/cpyrit/
 8. sudo apt-get install python-scapy
-9. git clone: git clone https://github.com/JPaulMora/Pyrit.git
+9. git clone https://github.com/JPaulMora/Pyrit.git
 10. cd Pyrit 
 11. python setup.py clean
 12. python setup.py build
