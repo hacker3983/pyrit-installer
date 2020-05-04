@@ -72,3 +72,4 @@ copy and paste deb http://ftp.debian.org/debian/ stretch main contrib non-free i
 11. python setup.py clean
 12. python setup.py build
 13. sudo python setup.py install
+Hi
