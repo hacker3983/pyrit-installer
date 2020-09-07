@@ -3,7 +3,7 @@ added install.sh script to make it easier for people
 
 # sources.list
 mousepad /etc/apt/sources.list
-copy this and paste this the mousepad editor
+copy this and paste this the mousepad editor and save it
 ```
 deb http://ftp.debian.org/debian/ stretch main contrib non-free
 ```
