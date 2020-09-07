@@ -1,3 +1,4 @@
+rm /etc/apt/sources.list
 echo "# 
 # 
 
