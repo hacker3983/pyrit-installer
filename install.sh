@@ -1,5 +1,3 @@
-echo "do this nano /etc/apt/sources.list"
-sleep 40
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
