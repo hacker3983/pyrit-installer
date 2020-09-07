@@ -15,4 +15,4 @@ git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.
 <img src="https://www.mediafire.com/convkey/8644/l50t2tl6yqzcdzn6g.jpg" alt="install.jpg">
 now after boom pyrit will be installed then we can install fluxion
 
-<h1>watch some of my youtube videos, like and subscribe to my channel</h1> https://www.youtube.com/watch?v=0NxyMVFNJAs
+<h1>watch some of my youtube videos, like and subscribe to my channel and turn on the post notification</h1> https://www.youtube.com/watch?v=0NxyMVFNJAs
