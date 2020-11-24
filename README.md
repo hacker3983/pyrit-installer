@@ -1,5 +1,6 @@
 # Please let me know if the script works
 send me an email at mrhashman6@gmail.com
+Please check out my repositories and give me some stars https://github.com/cyberinventor
 # Whats new
 added install.sh script to make it easier for people
 
