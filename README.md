@@ -3,9 +3,7 @@ send me an email at mrhashman6@gmail.com
 Please check out my repositories and give me some stars https://github.com/cyberinventor
 # Whats new
 added install.sh script to make it easier for people
-
-[<img src="https://www.mediafire.com/convkey/8cdb/j5m77qz0faajyij6g.jpg" alt="sources.list">]
-# clone the github repository and installation
+# installation
 ```
 git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.1a && mv how-to-install-pyrit-on-kali-linux-2020.1a pyrit-installer && cd pyrit-installer && bash install.sh
 ```
