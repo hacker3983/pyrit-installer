@@ -5,9 +5,9 @@ Please check out my repositories and give me some stars https://github.com/cyber
 added install.sh script to make it easier for people
 
 # sources.list
-```mousepad /etc/apt/sources.list```
+<!--```mousepad /etc/apt/sources.list```
 copy this and paste this the mousepad editor and save it
-```
+```-->
 deb http://ftp.debian.org/debian/ stretch main contrib non-free
 ```
 [<img src="https://www.mediafire.com/convkey/8cdb/j5m77qz0faajyij6g.jpg" alt="sources.list">]
