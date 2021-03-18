@@ -1,9 +1,10 @@
-echo -e "\033[0m[\033[31m+\033[0m]Adding sources to sources.list"
+echo -e "\033[0m[\033[32m+\033[0m] Adding sources to sources.list"
 echo deb http://ftp.debian.org/debian/ stretch main contrib non-free >> /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
-sudo apt-get install libpcap-dev -y
+echo -e "\033"
+apt-get update
+apt-get upgrade -y
+apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
+apt-get install libpcap-dev -y
 apt-get remove --purge pyrit
 rm -r /usr/local/lib/python2.7/dist-packages/cpyrit/
 sudo pip install psycopg2
