@@ -1,5 +1,5 @@
-sudo apt-get update
-sudo apt-get upgrade -y
+apt-get update
+apt-get upgrade -y
 sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
 sudo apt-get install libpcap-dev -y
 apt-get remove --purge pyrit
