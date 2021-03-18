@@ -3,9 +3,13 @@ send me an email at mrhashman6@gmail.com
 Please check out my repositories and give me some stars https://github.com/cyberinventor
 # Whats new
 added install.sh script to make it easier for people
-# installation
+# Installation
 ```
-git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.1a && mv how-to-install-pyrit-on-kali-linux-2020.1a pyrit-installer && cd pyrit-installer && bash install.sh
+git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.1a && mv how-to-install-pyrit-on-kali-linux-2020.1a pyrit-installer && cd pyrit-installer
+```
+# Usage
+```
+sudo bash install.sh
 ```
 <img src="https://www.mediafire.com/convkey/8644/l50t2tl6yqzcdzn6g.jpg" alt="install.jpg">
 now after boom pyrit will be installed then we can install fluxion
