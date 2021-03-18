@@ -1,6 +1,7 @@
 echo -e "\033[0m[\033[31m+\033[0m]Adding sources to sources.list"
 echo deb http://ftp.debian.org/debian/ stretch main contrib non-free >> /etc/apt/sources.list
-sudo apt-get update && apt-get upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
 sudo apt-get install libpcap-dev -y
 apt-get remove --purge pyrit
