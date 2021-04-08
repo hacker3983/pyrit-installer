@@ -6,6 +6,7 @@ Please check out my repositories and give me some stars https://github.com/cyber
 * added install.sh script to make it easier for people
 * Install.sh now warns you if you don't run it as root
 * Automates more things for the user
+* video coming soon
 <!--# sources.list
 ```mousepad /etc/apt/sources.list```
 copy this and paste this the mousepad editor and save it
