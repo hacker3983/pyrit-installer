@@ -13,8 +13,8 @@ copy this and paste this the mousepad editor and save it
 ```
 deb http://ftp.debian.org/debian/ stretch main contrib non-free
 ```-
-![sources.list](https://www.mediafire.com/convkey/8cdb/j5m77qz0faajyij6g.jpg)
-# clone the github repository and installation-->
+![sources.list](https://www.mediafire.com/convkey/8cdb/j5m77qz0faajyij6g.jpg)-->
+# clone the github repository and installation
 ```sh
 git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.1a pyrit-installer && cd pyrit-installer && sudo bash install.sh
 ```
