@@ -3,8 +3,8 @@
 send me an email at mrhashman6@gmail.com
 Please check out my repositories and give me some stars https://github.com/cyberinventor
 # Whats new
-added install.sh script to make it easier for people
-Improved install.sh
+* added install.sh script to make it easier for people
+* Improved install.sh
 <!--# sources.list
 ```mousepad /etc/apt/sources.list```
 copy this and paste this the mousepad editor and save it
