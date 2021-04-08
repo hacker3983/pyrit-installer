@@ -1,0 +1,49 @@
+XTERM - /usr/bin/xterm
+NMAP - /usr/bin/nmap
+AIRCRACK-NG - /usr/bin/aircrack-ng
+AIREPLAY-NG - /usr/sbin/aireplay-ng
+AIRMON-NG - /usr/sbin/airmon-ng
+AIRODUMP-NG - /usr/sbin/airodump-ng
+AWK - /usr/bin/awk
+CURL - /usr/bin/curl
+IWCONFIG - /usr/sbin/iwconfig
+MACCHANGER - /usr/bin/macchanger
+OPENSSL - /usr/bin/openssl
+UNZIP - /usr/bin/unzip
+RFKILL - /usr/sbin/rfkill
+STRINGS - /usr/bin/strings
+FUSER - /usr/bin/fuser
+PHP-CGI - /usr/bin/php-cgi
+[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]
+[                                                      ]
+[      FLUXION 2    < Fluxion Is The Future >          ]
+[                                                      ]
+[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]
+
+aircrack-ng.....OK!
+aireplay-ng.....OK!
+airmon-ng.......OK!
+airodump-ng.....OK!
+awk.............OK!
+curl............OK!
+dhcpd...........Not installed (isc-dhcp-server)
+hostapd.........Not installed
+iwconfig........OK!
+lighttpd........Not installed
+macchanger......OK!
+mdk3............Not installed
+nmap............OK!
+php-cgi.........Not installed
+pyrit...........Not installed
+python..........OK!
+unzip...........OK!
+xterm...........Not installed
+openssl.........OK!
+rfkill..........OK!
+strings.........OK!
+fuser...........OK!
+# Fix Installing python2.7-dev, libssl-dev, zlib1g-dev, and libpcap-dev
+sudo apt purge libpython2*
+sudo apt install python
+# Fix pip install psycopg2
+sudo apt install libpq-dev
