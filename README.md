@@ -24,5 +24,5 @@ now after boom pyrit will be installed then we can install fluxion
 # watch some of my youtube videos, like and subscribe to my channel and turn on the post notification
 [https://www.youtube.com/watch?v=tiVC4VlK-ls](https://www.youtube.com/watch?v=tiVC4VlK-ls)
 # Problems fixed
-* error cloning git pyrit repository
+* error cloning pyrit git repository
 ![image](https://user-images.githubusercontent.com/54384337/116007949-1687b700-a5c7-11eb-9a1f-cdb347b94a38.png)
