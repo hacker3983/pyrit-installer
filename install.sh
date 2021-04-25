@@ -115,7 +115,7 @@ echo -e "\033[32mDownloading \033[31mPyrit\033[0m"
 printf '\033]2;Downloading Pyrit\a'
 
 # Install Pyrit
-git clone https://github.com/JPaulMora/Pyrit.git && cd Pyrit
+git clone https://github.com/hacker3983/Pyrit
 python2 setup.py clean && python2 setup.py build && python2 setup.py install
 
 echo -e "\033[31mInstallation finished\033[0m"
