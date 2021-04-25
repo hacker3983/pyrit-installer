@@ -7,6 +7,12 @@ Please check out my repositories and give me some stars https://github.com/cyber
 * Install.sh now warns you if you don't run it as root
 * Automates more things for the user
 * video coming soon proof of concept
+
+# Problems fixed
+* error cloning git pyrit repository
+![image](https://user-images.githubusercontent.com/54384337/116007949-1687b700-a5c7-11eb-9a1f-cdb347b94a38.png)
+
+
 <!--# sources.list
 ```mousepad /etc/apt/sources.list```
 copy this and paste this the mousepad editor and save it
