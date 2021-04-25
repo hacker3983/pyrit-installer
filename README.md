@@ -8,11 +8,6 @@ Please check out my repositories and give me some stars https://github.com/cyber
 * Automates more things for the user
 * video coming soon proof of concept
 
-# Problems fixed
-* error cloning git pyrit repository
-![image](https://user-images.githubusercontent.com/54384337/116007949-1687b700-a5c7-11eb-9a1f-cdb347b94a38.png)
-
-
 <!--# sources.list
 ```mousepad /etc/apt/sources.list```
 copy this and paste this the mousepad editor and save it
@@ -27,3 +22,6 @@ git clone https://github.com/hacker3983/how-to-install-pyrit-on-kali-linux-2020.
 <!--![install.jpg](https://www.mediafire.com/convkey/8644/l50t2tl6yqzcdzn6g.jpg)-->
 now after boom pyrit will be installed then we can install fluxion
 <h1>watch some of my youtube videos, like and subscribe to my channel and turn on the post notification</h1> https://www.youtube.com/watch?v=tiVC4VlK-ls
+# Problems fixed
+* error cloning git pyrit repository
+![image](https://user-images.githubusercontent.com/54384337/116007949-1687b700-a5c7-11eb-9a1f-cdb347b94a38.png)
