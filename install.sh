@@ -98,7 +98,7 @@ fi
 # Install Fluxion Dependencies
 pkgscheck_flux
 echo -e "\033[34mUpdating \033[33mand \033[34mUpgrading\033[0m"
-apt-get update -y && apt-get upgrade -y
+#apt-get update -y && apt-get upgrade -y
 apt-get purge libpython2* -y && apt-get install python -y
 echo -e "Reinstalling \033[31mpython2\033[0m"
 apt-get install python2 -y
@@ -108,14 +108,13 @@ echo -e "Removing \033[31mpyrit\033[0m"
 apt-get remove --purge pyrit && rm -r /usr/local/lib/python2.7/dist-packages/cpyrit/
 echo -e "Installing \033[31mlibpq-dev\033[0m"
 apt-get install libpq-dev -y
-echo -e "Installing \033[31mpsycopg2 \033[0mand \033[31mscapy\033[0m"
-pip install psycopg2 scapy && apt-get install python-scapy -y
+echo -e "Installing \033[31msetuptools, \033[31mpsycopg2 \033[0mand \033[31mscapy\033[0m"
+pip install setuptools && pip install psycopg2 scapy && apt-get install python-scapy -y
 echo -e "\033[32mDownloading \033[31mPyrit\033[0m"
 printf '\033]2;Downloading Pyrit\a'
 
 # Install Pyrit
 git clone https://github.com/hacker3983/Pyrit
-python2 setup.py clean && python2 setup.py build && python2 setup.py install
-
+cd Pyrit && python2 setup.py clean && python2 setup.py build && python2 setup.py install
 echo -e "\033[1m\033[31mInstallation finished\033[0m"
 printf '\033]2; Installation finished\a'
