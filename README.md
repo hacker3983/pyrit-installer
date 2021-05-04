@@ -6,6 +6,7 @@ Please check out my repositories and give me some stars https://github.com/cyber
 * added install.sh script to make it easier for people
 * much faster installation
 * Install.sh now warns you if you don't run it as root
+* Uninstall.sh used to remove some dependences used for installation of pyrit.
 * Automates more things for the user
 * video coming soon proof of concept
 
