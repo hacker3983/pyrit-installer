@@ -100,7 +100,7 @@ pkgscheck_flux
 echo -e "\033[34mUpdating \033[33mand \033[34mUpgrading\033[0m"
 apt-get update -y && apt-get upgrade -y
 apt-get purge libpython2* -y && apt-get install python -y
-echoe -e "Reinstalling \033[31mpython2\033[0m"
+echo -e "Reinstalling \033[31mpython2\033[0m"
 apt-get install python2 -y
 echo -e "Installing \033[31mpython2.7-dev, \033[31mlibssl-dev\033[0m, \033[31mzlib1g-dev\033[0m, and \033[31mlibpcap-dev\033[0m"
 apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev -y
