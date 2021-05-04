@@ -4,6 +4,7 @@ function pkgscheck_flux() {
 	for pkg in "${packages_list[@]}"
 	do
 		echo -e "\033[34m[\033[31m+\033[34m] Checking for $pkg\033[0m"
+		sleep 1
 		if ! hash $pkg 2>/dev/null; then
 			echo -e "\033[31mNot Found\033[0m"
 			apt-get install $pkg -y
@@ -27,7 +28,6 @@ if [ $username != "root" ];then
 	exit
 fi
 echo -e "\033[34m[\033[31m+\033[34m] Checking for source in sources.list"
-sleep 5
 source="deb http://ftp.debian.org/debian/ stretch main contrib non-free"
 path="/etc/apt/sources.list"
 found=0
@@ -87,6 +87,7 @@ else
 	apt-get install nmap -y
 fi
 echo -e "\033[34m[\033[31m+\033[34m Checking for php-cgi"
+sleep 5
 if [ -f $phpcgi ];then
 	echo -e "\033[32mFound\033[0m"
 else
@@ -96,7 +97,6 @@ else
 fi
 # Install Fluxion Dependencies
 pkgscheck_flux
-
 echo -e "\033[34mUpdating \033[33mand \033[34mUpgrading\033[0m"
 apt-get update -y && apt-get upgrade -y
 apt-get purge libpython2* -y && apt-get install python -y
@@ -108,7 +108,6 @@ echo -e "Removing \033[31mpyrit\033[0m"
 apt-get remove --purge pyrit && rm -r /usr/local/lib/python2.7/dist-packages/cpyrit/
 echo -e "Installing \033[31mlibpq-dev\033[0m"
 apt-get install libpq-dev -y
-
 echo -e "Installing \033[31mpsycopg2 \033[0mand \033[31mscapy\033[0m"
 pip install psycopg2 scapy && apt-get install python-scapy -y
 echo -e "\033[32mDownloading \033[31mPyrit\033[0m"
@@ -118,5 +117,5 @@ printf '\033]2;Downloading Pyrit\a'
 git clone https://github.com/hacker3983/Pyrit
 python2 setup.py clean && python2 setup.py build && python2 setup.py install
 
-echo -e "\033[31mInstallation finished\033[0m"
+echo -e "\033[1m\033[31mInstallation finished\033[0m"
 printf '\033]2; Installation finished\a'
