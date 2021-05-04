@@ -109,7 +109,7 @@ apt-get remove --purge pyrit && rm -r /usr/local/lib/python2.7/dist-packages/cpy
 echo -e "Installing \033[31mlibpq-dev\033[0m"
 apt-get install libpq-dev -y
 echo -e "Installing \033[31msetuptools, \033[31mpsycopg2 \033[0mand \033[31mscapy\033[0m"
-pip install setuptools && pip install psycopg2 scapy && apt-get install python-scapy -y
+pip install setuptools psycopg2 scapy && apt-get install python-scapy -y
 echo -e "\033[32mDownloading \033[31mPyrit\033[0m"
 printf '\033]2;Downloading Pyrit\a'
 
