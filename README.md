@@ -28,4 +28,5 @@ now after boom pyrit will be installed then we can install fluxion
 # Problems fixed
 * error cloning pyrit git repository
 * issue installing psycopg2 and scapy
+* error when running pyrit
 ![image](https://user-images.githubusercontent.com/54384337/116007949-1687b700-a5c7-11eb-9a1f-cdb347b94a38.png)
