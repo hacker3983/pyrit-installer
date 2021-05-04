@@ -98,7 +98,7 @@ fi
 # Install Fluxion Dependencies
 pkgscheck_flux
 echo -e "\033[34mUpdating \033[33mand \033[34mUpgrading\033[0m"
-#apt-get update -y && apt-get upgrade -y
+# apt-get update -y && apt-get upgrade -y
 apt-get purge libpython2* -y && apt-get install python -y
 echo -e "Reinstalling \033[31mpython2\033[0m"
 apt-get install python2 -y
@@ -114,7 +114,11 @@ echo -e "\033[32mDownloading \033[31mPyrit\033[0m"
 printf '\033]2;Downloading Pyrit\a'
 
 # Install Pyrit
-git clone https://github.com/hacker3983/Pyrit
+if [ ! -d Pyrit ];then
+	git clone https://github.com/hacker3983/Pyrit
+fi
+sed -i "s/COMPILE_AESNI/COMPILE_AESNIX/" Pyrit/cpyrit/_cpyrit_cpu.c
 cd Pyrit && python2 setup.py clean && python2 setup.py build && python2 setup.py install
+
 echo -e "\033[1m\033[31mInstallation finished\033[0m"
 printf '\033]2; Installation finished\a'
