@@ -115,7 +115,7 @@ printf '\033]2;Downloading Pyrit\a'
 
 # Install Pyrit
 if [ ! -d Pyrit ];then
-	git clone https://github.com/hacker3983/Pyrit
+	git clone https://github.com/JPaulMora/Pyrit
 fi
 sed -i "s/COMPILE_AESNI/COMPILE_AESNIX/" Pyrit/cpyrit/_cpyrit_cpu.c
 cd Pyrit && python2 setup.py clean && python2 setup.py build && python2 setup.py install
