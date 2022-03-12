@@ -44,7 +44,7 @@ if [ $found != 1 ];then
 fi
 
 git="/usr/bin/git"
-python="/usr/bin/python"
+python="/usr/bin/python2"
 piperror="/usr/bin/python2: No module named pip"
 pip=$(python2 -m pip 2>&1)
 nmap="/usr/bin/nmap"
@@ -99,7 +99,7 @@ fi
 pkgscheck_flux
 echo -e "\033[1m\033[34mUpdating \033[33mand \033[34mUpgrading\033[0m"
 # apt-get update -y && apt-get upgrade -y
-apt-get purge libpython2* -y && apt-get install python -y
+apt-get purge libpython2* -y && apt-get install python2 -y
 echo -e "\033[1mReinstalling \033[31mpython2\033[0m"
 apt-get install python2 -y
 echo -e "\033[1mInstalling \033[31mpython2.7-dev, \033[31mlibssl-dev\033[0m, \033[31mzlib1g-dev\033[0m, and \033[31mlibpcap-dev\033[0m"
