@@ -1,0 +1,7 @@
+git clone https://github.com/wi-fi-analyzer/fluxion
+next repository
+git clone https://github.com/FluxionNetwork/fluxion
+apt install dhcpd lighttpd php-cgi
+apt install isc-dhcp-server
+apt-get install mdk3
+apt-get install mdk4
