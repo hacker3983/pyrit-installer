@@ -4,7 +4,6 @@ function pkgscheck_flux() {
 	for pkg in "${packages_list[@]}"
 	do
 		echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for $pkg\033[0m"
-		sleep 1
 		if ! hash $pkg 2>/dev/null; then
 			echo -e "\033[1m\033[31mNot Found\033[0m"
 			apt-get install $pkg -y
@@ -13,7 +12,7 @@ function pkgscheck_flux() {
 		fi
 	done
 	echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for dhcpd\033[0m"
-	if ! hash dhcpd 2>/dev/null;then
+	if ! hash dhcpd 2>/dev/null; then
 		echo -e "\033[1m\033[31mNot Found\033[0m"
 		echo -e "\033[1mInstalling \033[31mdhcpd\033[0m"
 		apt-get install isc-dhcp-server -y
@@ -23,7 +22,7 @@ function pkgscheck_flux() {
 }
 # Check for source in sources.list if not adds it to the sources.list
 username=$(whoami)
-if [ $username != "root" ];then
+if [ $username != "root" ]; then
 	echo -e "\033[1m\033[31mPlease run this script as the user root try doing sudo bash install.sh"
 	exit
 fi
@@ -32,14 +31,14 @@ source="deb http://ftp.debian.org/debian/ stretch main contrib non-free"
 path="/etc/apt/sources.list"
 found=0
 while read line; do
-	if [ "$line" == "$source" ];then
+	if [ "$line" == "$source" ]; then
 		found=1;
 		echo -e "\033[1m\033[32mFound\033[0m"
 		break
 	fi
 done < $path
 
-if [ $found != 1 ];then
+if [ $found != 1 ]; then
 	echo -e "\033[1m\033[31mNot Found \033[0m";echo "Adding $source to $path";echo $source >> $path;
 fi
 
@@ -50,8 +49,7 @@ pip=$(python2 -m pip 2>&1)
 nmap="/usr/bin/nmap"
 phpcgi="/usr/bin/php-cgi"
 echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for git"
-sleep 5
-if [ -x $git ];then
+if [ -x $git ]; then
 	echo -e "\033[1m\033[32mFound\033[0m"
 else
 	echo -e "\033[1m\033[31mNot Found\033[0m"
@@ -59,8 +57,7 @@ else
 	apt-get install git -y
 fi
 echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for python2"
-sleep 5
-if [ -f $python ];then
+if [ -f $python ]; then
 	echo -e "\033[1m\033[32mFound\033[0m"
 else
 	echo -e "\033[1m\033[31mNot Found\033[0m"
@@ -68,8 +65,7 @@ else
 	apt-get install python2 -y
 fi
 echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for python2-pip"
-sleep 5
-if [ "$pip" != "$piperror" ];then
+if [ "$pip" != "$piperror" ]; then
 	echo -e "\033[1m\033[32mFound\033[0m"
 else
 	echo -e "\033[1m\033[31mNot Found\033[0m"
@@ -78,8 +74,7 @@ else
 	python2 incase/get-pip.py
 fi
 echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for nmap"
-sleep 5
-if [ -f $nmap ];then
+if [ -f $nmap ]; then
 	echo -e "\033[1m\033[32mFound\033[0m"
 else
 	echo -e "\033[1m\033[31mNot Found\033[0m"
@@ -87,8 +82,7 @@ else
 	apt-get install nmap -y
 fi
 echo -e "\033[1m\033[34m[\033[31m+\033[34m] Checking for php-cgi"
-sleep 5
-if [ -f $phpcgi ];then
+if [ -f $phpcgi ]; then
 	echo -e "\033[1m\033[32mFound\033[0m"
 else
 	echo -e "\033[1m\033[31mNot Found\033[0m"
@@ -114,7 +108,7 @@ echo -e "\033[1m\033[32mDownloading \033[31mPyrit\033[0m"
 printf '\033]2;Downloading Pyrit\a'
 
 # Install Pyrit
-if [ ! -d Pyrit ];then
+if [ ! -d Pyrit ]; then
 	git clone https://github.com/JPaulMora/Pyrit
 fi
 sed -i "s/COMPILE_AESNI/COMPILE_AESNIX/" Pyrit/cpyrit/_cpyrit_cpu.c
