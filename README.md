@@ -1,6 +1,8 @@
 
 # Please let me know if the script works
-send me an email at mrhashman6@gmail.com
+send me an email at dujohn.dev@gmail.com
+# Support me
+Paypal: https://paypal.me/hacker3983
 # Whats new
 * added install.sh script to make it easier for people
 * much faster installation
