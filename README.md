@@ -3,6 +3,8 @@
 send me an email at dujohn.dev@gmail.com
 # Support me
 Paypal: https://paypal.me/hacker3983
+Youtube: https://www.youtube.com/@thepcexpert9830
+
 # Whats new
 * added install.sh script to make it easier for people
 * much faster installation
@@ -24,5 +26,3 @@ git clone https://github.com/hacker3983/pyrit-installer && cd pyrit-installer &&
 ```
 <!--![install.jpg](https://www.mediafire.com/convkey/8644/l50t2tl6yqzcdzn6g.jpg)-->
 now after boom pyrit will be installed then we can install fluxion
-# watch some of my youtube videos, like and subscribe to my channel and turn on the post notification
-[https://www.youtube.com/watch?v=tiVC4VlK-ls](https://www.youtube.com/watch?v=tiVC4VlK-ls)
